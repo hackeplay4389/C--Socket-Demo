@@ -1,0 +1,38 @@
+﻿<Window x:Class="DemoServer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DemoServer"  WindowStartupLocation="CenterScreen"
+        mc:Ignorable="d" FontSize="20" Icon="logo.ico" ResizeMode="CanMinimize"
+        Title="Socket通信 - 服务端" Height="521" Width="580"
+        Closed="Window_Closed" Closing="Window_Closing"
+        >
+
+    <!--Windwos资源区-->
+    <Window.Resources>
+        <DataTemplate x:Key="dt_msg">
+            <Border Height="auto" Width="505" BorderBrush="LightGray" Margin="0,5" BorderThickness="1" CornerRadius="5">
+                <StackPanel Orientation="Vertical" Height="Auto" VerticalAlignment="Top">
+                    <Label Content="{Binding Adress}" Foreground="Orange" FontSize="12" Margin="7,0"  />
+                    <Label Content="{Binding Time}" Margin="0" FontSize="12" Foreground="Blue"  />
+                    <TextBlock Height="auto" TextWrapping="Wrap" Text="{Binding Msg}" Margin="10,0,10,5" FontSize="15" />
+                </StackPanel>
+            </Border>
+        </DataTemplate>
+    </Window.Resources>
+
+    <Canvas>
+        <Label Content="本机IP：" Canvas.Left="13" Canvas.Top="16"/>
+        <TextBox x:Name="txt_IP" VerticalContentAlignment="Center" Height="31" Canvas.Left="93" TextWrapping="Wrap" Text="" Canvas.Top="17" Width="160"/>
+        <Label Content="端口：" Canvas.Left="273" Canvas.Top="17"/>
+        <TextBox x:Name="txt_Port" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="31" Canvas.Left="333" TextWrapping="Wrap" Text="8080" Canvas.Top="17" Width="80"/>
+        <Button x:Name="btn_StartServer" FontSize="16" Click="btn_StartServer_Click" Content="开启服务" Cursor="Hand" Canvas.Left="441" Canvas.Top="17" Width="115" Height="31"/>
+        <Label Content="消息记录：" Canvas.Left="13" Canvas.Top="56"/>
+        <ListBox x:Name="lb_msg" Height="249"  ItemTemplate="{StaticResource dt_msg}"  Canvas.Left="13" Canvas.Top="96" Width="540"/>
+        <TextBox x:Name="txt_Send" FontSize="15" Height="70" Canvas.Left="13" TextWrapping="Wrap" Text="" Canvas.Top="360" Width="540"/>
+        <ComboBox x:Name="cb_Clients" Canvas.Left="163" Canvas.Top="444" Width="250"/>
+        <Label Content="消息接收地址：" Canvas.Left="13" Canvas.Top="442"/>
+        <Button x:Name="btn_SendMsg" Click="btn_SendMsg_Click" FontSize="16"  Content="发送消息" Cursor="Hand" Canvas.Left="438" Canvas.Top="444" Width="115" Height="31"/>
+    </Canvas>
+</Window>

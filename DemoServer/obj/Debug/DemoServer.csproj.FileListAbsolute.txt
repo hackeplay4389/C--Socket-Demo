@@ -1,0 +1,13 @@
+D:\WZIot\WorkSpace\Socket通信\DemoServer\bin\Debug\DemoServer.exe
+D:\WZIot\WorkSpace\Socket通信\DemoServer\bin\Debug\DemoServer.pdb
+D:\WZIot\WorkSpace\Socket通信\DemoServer\obj\Debug\MainWindow.g.cs
+D:\WZIot\WorkSpace\Socket通信\DemoServer\obj\Debug\App.g.cs
+D:\WZIot\WorkSpace\Socket通信\DemoServer\obj\Debug\DemoServer_MarkupCompile.cache
+D:\WZIot\WorkSpace\Socket通信\DemoServer\obj\Debug\DemoServer_MarkupCompile.lref
+D:\WZIot\WorkSpace\Socket通信\DemoServer\obj\Debug\MainWindow.baml
+D:\WZIot\WorkSpace\Socket通信\DemoServer\obj\Debug\DemoServer.g.resources
+D:\WZIot\WorkSpace\Socket通信\DemoServer\obj\Debug\DemoServer.Properties.Resources.resources
+D:\WZIot\WorkSpace\Socket通信\DemoServer\obj\Debug\DemoServer.csproj.GenerateResource.Cache
+D:\WZIot\WorkSpace\Socket通信\DemoServer\obj\Debug\DemoServer.exe
+D:\WZIot\WorkSpace\Socket通信\DemoServer\obj\Debug\DemoServer.pdb
+D:\WZIot\WorkSpace\Socket通信\DemoServer\obj\Debug\DemoServer.csprojResolveAssemblyReference.cache
